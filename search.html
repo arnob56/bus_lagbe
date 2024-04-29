@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Search</title>
+</head>
+<body>
+    <h2>Search for Buses</h2>
+    <form action="search.php" method="GET">
+        <label for="boarding_point">Boarding Point:</label>
+        <input type="text" name="boarding_point" id="boarding_point" required><br>
+        
+        <label for="dropping_point">Dropping Point:</label>
+        <input type="text" name="dropping_point" id="dropping_point" required><br>
+        
+        <label for="bus_type">Bus Type:</label>
+        <select name="bus_type" id="bus_type">
+            <option value="AC">AC</option>
+            <option value="Non-AC">Non-AC</option>
+        </select><br>
+        
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html>

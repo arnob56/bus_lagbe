@@ -1,0 +1,14 @@
+<form action="submit_review.php" method="post">
+  <label for="rating">Rating:</label>
+  <select name="rating" id="rating">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select><br>
+  <label for="comment">Comment:</label><br>
+  <textarea name="comment" id="comment" rows="4" cols="50"></textarea><br>
+  <input type="hidden" name="bus_id" value="<?php echo $bus_id; ?>">
+  <input type="submit" value="Submit">
+</form>
